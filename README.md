@@ -8,7 +8,7 @@
 # Mailing 
 ## Dexter
 1. student exp
-2. discus
+2. discus = done
 3. PAL = done
 4. Societies (Allow JRA) = done
 
