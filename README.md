@@ -7,14 +7,14 @@
 
 # Mailing 
 ## Dexter
-student exp
-discus
-PAL
-Societies (Allow JRA)
+1. student exp
+2. discus
+3. PAL = done
+4. Societies (Allow JRA) = done
 
 ## Anindya
-Robotics mailing list (thomas or andy)
-Connect (thomas)
-ConnectML
-SNAC (Baden)
+1. Robotics mailing list (thomas or andy)
+2. Connect (thomas)
+3. ConnectML
+4. SNAC (Baden)
 
