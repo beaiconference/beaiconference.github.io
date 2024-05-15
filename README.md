@@ -1,20 +1,15 @@
-# be.ai-conference
+# be.ai-conference 2024
 1. banner = done
-2. website = done
-3. call for papers email = done
-4. Eventbrite set up = done
-5. Poster = done
+2. website = updating
+3. call for papers email = not done
+4. Eventbrite set up = not done
+5. Poster = not done
+6. Chosen date = not done
+7. Select speakers = not done
 
 # Mailing 
-## Dexter
-1. student exp
-2. discus = done
-3. PAL = done
-4. Societies (Allow JRA) = done
-
-## Anindya
-1. Robotics mailing list (thomas or andy)
-2. Connect (thomas)
-3. ConnectML
-4. SNAC (Baden)
-
+Tasks to be done:
+1. Email student Exp teams to promote conference
+2. Email speakers
+3. Book venue
+4. Call for posters
