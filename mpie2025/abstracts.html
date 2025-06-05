@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Be.AI conference</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-card w3-left-align w3-large" style="background-color:#c20000;color:white;">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html#" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+    <a href="index.html#about" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">About</a>
+    <a href="index.html#org" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Organisers</a>
+    <a href="abstracts.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Speaker Abstracts</a>
+    <a href="posters.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Posters</a>
+    <a href="index.html#schedule" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Schedule</a>
+    <a href="index.html#map" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Map</a>
+    
+
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="index.html#about" class="w3-bar-item w3-button w3-padding-large">About</a>
+    <a href="index.html#org" class="w3-bar-item w3-button w3-padding-large">Organisers</a>
+    <a href="abstracts.html" class="w3-bar-item w3-button w3-padding-large">Speaker Abstracts</a>
+    <a href="posters.html" class="w3-bar-item w3-button w3-padding-large">Posters</a>
+    <a href="index.html#schedule" class="w3-bar-item w3-button w3-padding-large">Schedule</a>
+    <a href="index.html#map" class="w3-bar-item w3-button w3-padding-large">Map</a>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-container w3-center" style="background-image: linear-gradient(rgba(163, 162, 162, 0.733), rgba(163, 162, 162, 0.733)),url('assets/photos/DSC_1097.JPG');
+background-repeat: no-repeat;background-size: cover;color:white;padding:128px 16px">
+<img width="10%"; src="assets/mpieWhite.png">
+  <h2 class="w3-margin w3-jumbo">MPIE conference</h2>
+  <p class="w3-xlarge">M<a style="color:#c20000;">aths</a> P<a style="color:#c20000;">hysics</a> I<a style="color:#c20000;">nformatics</a> E<a style="color:#c20000;">ngineering</a></p>
+ 
+</header>
+
+<a id="about"></a>
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-row">
+      <div class="w3-twothird">
+        <h1><a href="https://profiles.sussex.ac.uk/p504012-ivor-simpson">Ivor Simpson </a></h1>
+        <p>Machine Learning for Inference in Inverse Problems: Advances and Opportunities</p>
+        <h5 class="w3-padding-32">
+          Ill-posed inverse problems in high-dimensional imaging applications, such as those in medical imaging and computer vision, often lack a definitive ground truth and can challenge traditional inference methods. This talk will explore recent advances where machine learning (ML) has facilitated efficient probabilistic inference in various applications. We will discuss the somewhat empirical nature of these advancements and the biases introduced by ML approaches. Finally, we will identify specific challenges and promising research opportunities in this evolving field.
+        </h5>
+      </div>
+      <div class="w3-third w3-center">
+        <img class="w3-padding-64" style="margin-top:50px;margin-left:20px;width:70%;height:auto;" src="assets/speakers/ivor.jpg">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Second Grid -->
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-row">
+      <div class="w3-twothird">
+        <h1><a href="https://profiles.sussex.ac.uk/p260256-yuliya-kyrychko">Yuliya Kyrychko</a></h1>
+        <p>Dynamics of coupled systems with time delays.</p>
+        <h5 class="w3-padding-32">Time delays can arise in various physical, biological, physiological and engineering fields, such as chemical reactions, control systems, and biological systems, among others. Since in many realistic settings, the delays are not constant, it is more applicable to use some distribution of time delays to describe the system's dynamics.
+          In this talk I will review the effects of distributed time delays on the dynamics of coupled systems with applications to modelling of neural networks and epidemic modelling. In particular, I will discuss the effects of two different types of distributed-delay coupling in the system of two mutually coupled Kuramoto oscillators: one where the delay distribution is considered inside the coupling function, and the other where the distribution enters outside the coupling function. I will also  consider a globally coupled network of active and inactive oscillators with distributed-delay coupling and show the conditions for aging transition, associated with suppression of oscillations, for several different distributions of time delays.  </h5>
+      </div>
+      <div class="w3-third w3-center">
+        <img class="w3-padding-64" style="margin-top:50px;margin-left:20px;width:70%;height:auto;" 
+        src="assets/speakers/Yuliya.jpg">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-row">
+      <div class="w3-twothird">
+        <h1><a href="https://profiles.sussex.ac.uk/p178720-matthias-keller">Matthias Keller</a></h1>
+        <p>Quantum technology development and applications</p>
+        <h5 class="w3-padding-32">
+          In the last decade, quantum mechanics found its way into many applications by developing technologies based on atomic, photonic or solid-state systems. Ranging from quantum sensing to quantum computing and networking, the Sussex Centre for Quantum Technologies, A University Centre of Excellence, has a leading role in the UK’s quantum technology landscape. The Centre is a multi-disciplinary entity with currently eight research groups from Physics and Informatics. In my presentation, I will show the range of technologies developed at Sussex and discuss important applications. We are developing quantum computers based on trapped atomic ions, ion-photon interfaces for quantum networking and distributed quantum computing, magnetic field sensors, optical atomic clocks, the quantum radar and investigate novel solid-state qubit and their manipulation. In addition, we explore how your understanding of the universe can be furthered by using quantum technologies to measure the neutrino mass and searching for changes in fundamental constants.
+        </h5>
+      </div>
+      <div class="w3-third w3-center">
+        <img class="w3-padding-64" style="margin-top:50px;margin-left:20px;width:70%;height:auto;" 
+        src="assets/speakers/matthias.jpg">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-row">
+      <div class="w3-twothird">
+        <h1><a href="https://profiles.sussex.ac.uk/p555178-carlo-tiseo">Carlo Tiseo</a></h1>
+        <p>Exploiting Synchronism To Achieve a More Biomimetic Interaction Control</p>
+        <h5 class="w3-padding-32">
+          There is evidence that animals exploit synchronism to simplify the control of their body and stabilize the interaction with the external environment; however, the mechanisms involved still evade our understanding. Currently, most model-based methods used to control robots and model and track animal behaviour use a projected dynamics optimization to regress the system parameters. Such an approach requires a dynamic reference behaviour and is susceptible to kinematic and representation singularities, making them computationally expensive and limiting their robustness. To address this issue, we have developed a passive controller characterized by a conservative observer, which allows multiple controllers to be superimposed without affecting stability while operating with extreme information delay and running at low controller bandwidth. These methods have been successfully applied in human-robot interaction for industrial, space, and medical robotics. In the future, it is expected that such an approach will allow the development of biomimetic control architectures capable of human-like interaction in complex variegated environments.
+        </h5>
+      </div>
+      <div class="w3-third w3-center">
+        <img class="w3-padding-64" style="margin-top:50px;margin-left:20px;width:70%;height:auto;" 
+        src="assets/speakers/carlo.jpg">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--
+        <div class="w3-row-padding w3-padding-64 w3-container">
+            <div class="w3-content">
+              <div class="w3-twothird">
+                  <h1>About</h1>
+                  <h5 class="w3-padding-32">
+            
+                    </h5>
+                <div class="w3-third w3-center">
+                  <img class="w3-padding-64" style="margin-top:50px;margin-left:20px;width:100%;height:100%;"; 
+                  src="assets/robot.jpg">
+                </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+          <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+            <div class="w3-content">
+                <div class="w3-twothird">
+                  <h1>About</h1>
+                  <h5 class="w3-padding-32">
+            
+                    </h5>
+                <div class="w3-third w3-center">
+                  <img class="w3-padding-64" style="margin-top:50px;margin-left:20px;width:100%;height:100%;"; 
+                  src="assets/robot.jpg">
+                </div>
+              </div>
+            </div>
+        
+            <div class="w3-row-padding w3-padding-64 w3-container">
+                <div class="w3-content">
+                  <div class="w3-twothird">
+                      <h1>About</h1>
+                      <h5 class="w3-padding-32">
+                
+                        </h5>
+                    <div class="w3-third w3-center">
+                      <img class="w3-padding-64" style="margin-top:50px;margin-left:20px;width:100%;height:100%;"; 
+                      src="assets/robot.jpg">
+                    </div>
+              </div><div></div>
+        
+ -->
+<div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+</div> 
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">
+  <p class="w3-margin ">
+    University of Sussex <br>
+    Sussex House, Falmer <br>
+    Brighton, BN1 9RH <br>
+    United Kingdom <br>
+  </p>
+ <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>

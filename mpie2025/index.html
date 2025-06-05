@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>MPIE</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-card w3-left-align w3-large" style="background-color:#c20000;color:white;">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">About</a>
+  <!-- <a href="posters.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Posters</a> -->
+    <a href="#org" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Organisers</a>
+    <a href="abstracts.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Speaker Abstracts</a>
+    <a href="posters.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Posters</a>
+    <a href="#schedule" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Schedule</a>
+    <a href="#map" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Map</a>
+
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="#about" class="w3-bar-item w3-button w3-padding-large">About</a>
+    <!-- <a href="posters.html" class="w3-bar-item w3-button w3-padding-large">Posters</a> -->
+    <a href="#org" class="w3-bar-item w3-button w3-padding-large">Organisers</a>
+    <a href="abstracts.html" class="w3-bar-item w3-button w3-padding-large">Speaker Abstracts</a>
+    <a href="posters.html" class="w3-bar-item w3-button w3-padding-large">Posters</a>
+    <a href="#schedule" class="w3-bar-item w3-button w3-padding-large">Schedule</a>
+    <a href="#map" class="w3-bar-item w3-button w3-padding-large">Map</a>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-container w3-center" style="background-image: linear-gradient(rgba(163, 162, 162, 0.733), rgba(163, 162, 162, 0.733)),url('assets/photos/DSC_0287.JPG');
+background-repeat: no-repeat;background-size: cover;color:white;padding:128px 16px">
+<img width="10%"; src="assets/mpieWhite.png">
+  <h2 class="w3-margin w3-jumbo">MPIE Conference</h2>
+  <p class="w3-xlarge">M<a style="color:#c20000;">aths</a> P<a style="color:#c20000;">hysics</a> I<a style="color:#c20000;">nformatics</a> E<a style="color:#c20000;">ngineering</a></p>
+ 
+  <!--<form action="https://github.com/be-aiconference2023/be.ai-conference/tree/main/assets/photos">
+      <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top"
+      type="submit">See photos</button>
+  </form>  -->
+  
+<form action="https://forms.gle/aQmBUxAea3wUp4KG8">
+  <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top"
+  type="submit">Sign up for Poster</button>
+</form>
+<form action="https://www.eventbrite.co.uk/e/mpie-tickets-983763171127?aff=oddtdtcreator&_gl=1*1hpndiq*_up*MQ..*_ga*MTA1NjczODc0LjE3MjMyMDQ3OTQ.*_ga_TQVES5V6SH*MTcyMzIwNDc5NC4xLjAuMTcyMzIwNDc5NC4wLjAuMA..">
+  <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top"
+  type="submit">Sign up to attend conference</button>
+</form>
+</header>
+
+
+<!-- <form action="https://forms.gle/aQmBUxAea3wUp4KG8">
+    <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top"
+    type="submit">Apply for Poster/Presentation</button>
+</form>-->
+<a id="about"></a>
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h1>About</h1>
+      <h5 class="w3-padding-32">
+Welcome to the official website of the MPIE Conference, an exciting interdisciplinary gathering at the University of Sussex. This event aims to unite researchers from the fields of mathematics, physics, informatics, and engineering, fostering collaboration and innovation at the intersection of these dynamic disciplines. Join us as we explore cutting-edge developments and share insights that push the boundaries of knowledge and technology.
+
+The poster exhibition is open to keen undergraduate finalists, masters, PhD and above. This is a great way for research groups to show off what they are doing, or individuals. We encourage bringing demos along if possible. 
+      
+The conference is broken up into four sessions: Data science, Computing approaches, Materials, and Modelling life. 
+<br><br>
+Funding bodies: <a href="https://www.sussex.ac.uk/ccnr/be_ai">Be.AI Leverhulme Trust</a>, <a href="https://www.sussex.ac.uk/research/centres/sussex-centre-for-quantum-technologies/">Sussex Centre for Quantum Technologies</a>, 
+<a href="https://www.sussex.ac.uk/schools/engineering-and-informatics/">School of Engineering and Informatics</a>
+<p class="w3-text-grey">MPIE conference, 6th September 2024, 09:00 - 17:30</p>
+    </div>
+
+    <div class="w3-third w3-center">
+      <img class="w3-padding-64" style="margin-top:50px;margin-left:20px;width:100%;height:100%;"; src="assets/designxcf.png">
+    </div>
+  </div>
+</div>
+
+<a id="speaker"></a>
+<!-- 
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-center">
+      <h1>Speakers</h1>
+            <table style="margin-left: auto;margin-right: auto;">
+        <tr>
+          <td><a href="https://www.imperial.ac.uk/people/d.goodman">Presenter</a></td>
+          <td><a href="https://www.bristol.ac.uk/people/person/Rui-Ponte%20Costa-14dcfe6e-ae4b-44bb-a87a-91635e503eaa/">Presenter</a></td>
+        </tr>
+        <tr>
+          <td><img class="imageFace" src="assets/dan.jpg"></td>
+          <td><img class="imageFace" src="assets/rui.png"></td>
+        </tr>
+        <tr>
+          <td style="width: 130px;">Neural computation</td>
+          <td style="width: 130px;">Machine learning, neural computation</td>
+        </tr>
+              <br><br>
+
+        <tr>
+          <td><a href="https://maguilera.net/about.html">Presenter</a></td>
+          <td><a href="https://profiles.sussex.ac.uk/p371072-miguel-maravall-rodriguez">Presenter</a></td>
+        </tr>
+        <tr>
+          <td><img class="imageFace" src="assets/pic_600x600.png"></td>
+          <td><img class="imageFace" src="assets/miguel.jpeg"></td>
+        </tr>
+        <tr>
+          <td style="width: 130px;">Computational neuroscience</td>
+          <td style="width: 130px;">Sensory processing</td>
+        </tr>
+        <br><br>
+
+        <tr>
+          <td><a href="https://www.surrey.ac.uk/people/alexandra-alex-penn">Presenter</a></td>
+          <td><a href="https://henryshevlin.com/">Presenter</a></td>
+        </tr>
+        <tr>
+          <td><img class="imageFace" src="assets/alex.png"></td>
+          <td><img class="imageFace" src="assets/Henry.png"></td>
+        </tr>
+        <tr>
+          <td style="width: 130px;">Complexity science</td>
+          <td style="width: 130px;">Philosphy of AI</td>
+        </tr>
+
+        <tr>
+          <td><a href="https://profiles.sussex.ac.uk/p274680-maxine-sherman">Presenter</a></td>
+          <td><a href="https://profiles.sussex.ac.uk/p156234-adam-barrett">Presenter</a></td>
+        </tr>
+        <tr>
+          <td><img class="imageFace" src="assets/maxine.png"></td>
+          <td><img class="imageFace" src="assets/adam.jpeg"></td>
+        </tr>
+        <tr>
+          <td style="width: 130px;">Cognitive neuroscience</td>
+          <td style="width: 130px;">Consciousness studies</td>
+        </tr>
+      </table>
+      
+    </div>
+
+  </div>
+
+</div> -->
+<a id="posters"></a>
+<!-- First Grid 
+
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h1>Call for posters</h1>
+      <h5 class="w3-padding-32">
+We are excited to announce our call for posters for the upcoming MPIE conference held here at Sussex.  <br><br>
+
+The poster session will provide an excellent opportunity for students and researchers to present early-stage, pre-submitted, not-yet-ready-for-prime-time
+research and receive valuable feedback on their ongoing research from the community. In addition, we strongly encourage research groups to make posters to promote what their group does to the rest of the scientific community here at Sussex. <br><br>
+
+As a guideline, the poster should carry the same information as a two-page extended abstract. To that effect, provide an introduction (outline) and a summary or conclusion for your poster. Also, prepare your poster carefully so that
+it can be used as the basis to explain and answer questions from the viewers. <br><br>
+
+<br><br>
+
+Poster deadline: <s>1st August 2024</s>EXTENDED: 22cnd August <br><br>
+
+Poster format:
+
+<ol>
+  <li>The maximum dimension of the poster panel is A1.
+  </li>
+  <li>File format: PDF (Please limit the size of the PDF file to no more than 4 MB).</li>
+  <li>There is no specific template for the posters. You should choose the format that best represents your research work.
+    However, the posters must be printable in A1 </li>
+
+</ol>
+
+
+Please submit your poster via our form
+<br>
+
+<form action="https://docs.google.com/forms/d/e/1FAIpQLSf4ZxuGaiXRH_hE3kIZmy29QY3Rx84-tYk4eIbvJGwuIQCJ5A/viewform?usp=sf_link">
+    <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top"
+    type="submit">Submit poster</button>
+</form>
+
+
+
+ </h5>
+
+      <p class="w3-text-grey"></p>
+    </div>
+
+    <div class="w3-third w3-center">
+
+      </div>
+  </div>
+</div>-->
+<a id="org"></a>
+<!-- Second Grid -->
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-center">
+      <h1>Academic Lead</h1>
+            <table style="margin-left: auto;margin-right: auto;">
+        <tr>
+          <td><a href="https://profiles.sussex.ac.uk/p23611-andy-philippides">Professor Andy Philippedes</a></td>
+          <td><a href="https://profiles.sussex.ac.uk/p178720-matthias-keller">Professor Matthias Keller</a></td>
+          <td><a href="https://profiles.sussex.ac.uk/p206151-thomas-nowotny">Professor Thomas Nowotny</a></td>
+          <td><a href="https://profiles.sussex.ac.uk/p173323-omar-lakkis">Dr Omar Lakkis</a></td>
+        </tr>
+        <tr>
+          <td><img class="imageFace" src="assets/andy.jpeg"></td>
+          <td><img class="imageFace" src="assets/matthias.jpeg"></td>
+          <td><img class="imageFace" src="assets/thomas.jpeg"></td>
+          <td><img class="imageFace" src="assets/omar.jpeg"></td>
+        </tr>
+        <tr>
+          <td class="textInf">Biorobotics, biomimetic navigation, active AI</td>
+          <td class="textInf">Atomic, molecular and optical Physics, quantum technology</td>
+          <td class="textInf">Olfaction, biomimetic AI, hybrid systems</td>
+          <td class="textInf">Numerical and computational mathematics</td>
+        </tr>
+      </table>
+      <h1>Organising committee</h1>
+      <h2>Committee Chairs</h2>
+            <table style="margin-left: auto;margin-right: auto;">
+        <tr>
+
+          <td><a href="https://profiles.sussex.ac.uk/p493975-dexter-shepherd">Dexter Shepherd</a></td>
+          <td><a href="https://www.sussex.ac.uk/research/labs/ion-trap-cavity-qed-and-molecular-physics/people/">Amber Shepherd</a></td>
+        </tr>
+        <tr>
+
+          <td><img class="imageFace" src="assets/dexter.jpeg"></td>
+          <td><img class="imageFace" src="assets/amber.jpeg"></td>
+        </tr>
+        <tr>
+
+          <td class="textInf">Biorobotics, evolutionary robotics, embodied AI</td>
+          <td class="textInf">Quantum physics, optical physics, ion trapping</td>
+        </tr>
+
+        
+      </table>
+      <h2>Committee</h2>
+            <table style="margin-left: auto;margin-right: auto;">
+        <tr>
+
+          <td><a href="https://profiles.sussex.ac.uk/p353734-christopher-brown">Christopher Brown</a></td>
+          <td><a href="http://www.sussex.ac.uk/mps/internal/departments/mathematics/studentreps">Jenny Ward</a></td>
+          <td><a href="https://www.sussex.ac.uk/schools/engineering-and-informatics/contacts/engineering-product-design/a-z">Benedict Fletcher</a></td>
+        </tr>
+        <tr>
+
+          <td><img class="imageFace" src="assets/chris.jpeg"></td>
+          <td><img class="imageFace" src="assets/jenny.jpeg"></td>
+          <td><img class="imageFace" src="assets/benedict.jpg"></td>
+        </tr>
+        <tr>
+
+          <td class="textInf">Condensed matter physics, nanomaterials, nanotechnology</td>
+          <td class="textInf">Dynamical Systems, Construction of Lyapunov functions.</td>
+          <td class="textInf">Soft robotics, bio-inspired robotics</td>
+        </tr>
+
+        
+      </table>
+    </div>
+<p class="w3-text-grey">
+    be.AI is directed by Profs Thomas Nowotny, Andrew Philippides (both in the AI research group in Informatics) and Paul Graham (Neurosciences Division in Life Sciences), supported by an Academic Board, whose membership currently comprises Prof Luc Berthouze, Dr Chris Buckley, Dr Julie Weeds (all in the AI research group in Informatics) Prof Daniel Roggen (Engineering), Prof Thomas Baden (Life Sciences) and Prof Andy Clark (Philosophy).
+<br>
+The Advisory Board includes Prof Margaret Boden, OBE ScDFBA, co-founder of COGS, as the honorary Head of be.AI, Prof Cecilia Laschi (Pisa, Italy), Prof Martin Nawrot (Universität Köln), and Prof James Marshall (Opteran Technologies and University of Sheffield).
+</p>
+  </div>
+
+</div>
+
+
+ 
+<a id="schedule"></a>
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+
+    <div class="w3-center">
+      <h1> Schedule</h1>
+
+<table>
+  <table style="margin-left: auto;margin-right: auto;">
+    <tr>
+      <td></a></td>
+      <td><a>Speaker</a></td>
+      <td><a>Title</a></td>
+    </tr>
+    <tr>
+      <td style="padding: 8px;"><a>09:00</a></td>
+      <td style="text-align: right;padding: 8px;"><a>Welcome</a></td>
+    </tr>
+  <tr style="background-color: #f2f2f2">
+    <td style="padding: 8px;"><a>09:10</a></td>
+    <td style="text-align: right;padding: 8px;"><a><b>Ivor Simpson</b></a></td>
+    <td style="text-align: right;padding: 8px;"><a>--</a></td>
+  </tr>
+  <tr style="background-color: #f2f2f2">
+    <td style="padding: 8px;"><a>--:--</a></td>
+    <td style="text-align: right;padding: 8px;"><a>Aline Amorin Graf & Henry Dore</a></td>
+    <td style="text-align: right;padding: 8px;"><a>Thermal comfort inequity: an analysis on how individual thermal perception affects workplace policies</a></td>
+  </tr>
+  <tr>
+
+    <td style="padding: 8px;"><a>10:15</a></td>
+      <td style="text-align: right;padding: 8px;"><a>Coffee break and Conference photo</a></td>
+    <td style="text-align: right;padding: 8px;"><a></a></td>
+    </tr>
+      <tr>
+
+  <tr style="background-color: #f2f2f2">
+    <td style="padding: 8px;"><a>10:50</a></td>
+    <td style="text-align: right;padding: 8px;"><a>Will Roper</a></td>
+    <td style="text-align: right;padding: 8px;"><a>Towards Efficient Cosmological Hydrodynamical simulations In The Exascale Era</a></td>
+  </tr>
+      <tr style="background-color: #f2f2f2">
+  <td style="padding: 8px;"><a>--:--</a></td>
+    <td style="text-align: right;padding: 8px;"><a>Enrico Caprioglio</a></td>
+    <td style="text-align: right;padding: 8px;"><a>Emergence of metastability in frustrated oscillatory networks: the key role of hierarchical modularity</a></td>
+  </tr>
+  <tr style="background-color: #f2f2f2">
+    <td style="padding: 8px;"><a>--:--</a></td>
+    <td style="text-align: right;padding: 8px;"><a>Philip Herbert</a></td>
+    <td style="text-align: right;padding: 8px;"><a>PDE constrained shape optimisation</a></td>
+  </tr>
+  <tr style="background-color: #f2f2f2">
+    <td style="padding: 8px;"><a>--:--</a></td>
+    <td style="text-align: right;padding: 8px;"><a><b>Yuliya Kyrychko</b></a></td>
+    <td style="text-align: right;padding: 8px;"><a>Dynamics of coupled systems with time delays</a></td>
+  </tr>
+  <td style="padding: 8px;"><a>12:30</a></td>
+      <td style="text-align: right;padding: 8px;"><a>Lunch and poster break</a></td>
+    <td style="text-align: right;padding: 8px;"><a></a></td>
+    </tr>
+      <tr>
+
+        <tr style="background-color: #f2f2f2">
+          <td style="padding: 8px;"><a>13:30</a></td>
+          <td style="text-align: right;padding: 8px;"><a>Poppy Joshi</a></td>
+          <td style="text-align: right;padding: 8px;"><a>Bose-Einstein condensate microscopy</a></td>
+        </tr>
+            <tr style="background-color: #f2f2f2">
+        <td style="padding: 8px;"><a>--:--</a></td>
+          <td style="text-align: right;padding: 8px;"><a>Balázs Mészáros</a></td>
+          <td style="text-align: right;padding: 8px;"><a>DeventProp: Synaptic Delay Learning in Deep Recurrent Spiking Neural Networks Using the Adjoint Method</a></td>
+        </tr>
+        <tr style="background-color: #f2f2f2">
+          <td style="padding: 8px;"><a>--:--</a></td>
+          <td style="text-align: right;padding: 8px;"><a>Niel de Beaudrap</a></td>
+          <td style="text-align: right;padding: 8px;"><a>Quantum information processing</a></td>
+        </tr>
+        <tr style="background-color: #f2f2f2">
+          <td style="padding: 8px;"><a>--:--</a></td>
+          <td style="text-align: right;padding: 8px;"><a><b>Matthias Keller</b></a></td>
+          <td style="text-align: right;padding: 8px;"><a>Quantum technology development and applications</a></td>
+        </tr>
+     
+      <tr>
+<td style="padding: 8px;"><a >15:15</a></td>
+    <td style="text-align: right;padding: 8px;"><a>Coffee break</a></td>
+  <td style="text-align: right;padding: 8px;"><a></a></td>
+  </tr>
+  <tr style="background-color: #f2f2f2">
+    <td style="padding: 8px;"><a>15:30</a></td>
+    <td style="text-align: right;padding: 8px;"><a>Jess Lock</a></td>
+    <td style="text-align: right;padding: 8px;"><a>Developing opaque scintillator detectors</a></td>
+  </tr>
+  <tr style="background-color: #f2f2f2">
+    <td style="padding: 8px;"><a>--:--</a></td>
+    <td style="text-align: right;padding: 8px;"><a><b>Carlo Tiseo</b></a></td>
+    <td style="text-align: right;padding: 8px;"><a>Exploiting Synchronism To Achieve a More Biomimetic Interaction Control</a></td>
+  </tr>
+  <td style="padding: 8px;"><a>16:50</a></td>
+    <td style="text-align: right;padding: 8px;"><a>Closing address and prizes</a></td>
+<td style="text-align: right;padding: 8px;"><a></a></td>
+  </tr>
+
+  </table>
+</table>
+<br>
+</div><div></div>
+
+<a id="map"></a>
+
+
+<div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+  <h1>Map</h1>
+  <img width="80%" src="assets/map.png" alt="map">
+</div>
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">
+
+  <img width="90%" src="assets/beai.jpg">
+  <p class="w3-margin ">
+    University of Sussex <br>
+    Sussex House, Falmer <br>
+    Brighton, BN1 9RH <br>
+    United Kingdom <br>
+  </p>
+ <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>
