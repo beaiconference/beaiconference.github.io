@@ -1,98 +1,337 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+    <head>
+        <title>MPIE 2025</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="style.css" />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Lato"
+        />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Montserrat"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+        <style>
+            body,
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                font-family: "Lato", sans-serif;
+            }
 
-<head>
-  <title>MPIE 2025</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <style>
-    body,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      font-family: "Lato", sans-serif
-    }
+            .w3-bar,
+            h1,
+            button {
+                font-family: "Montserrat", sans-serif;
+            }
 
-    .w3-bar,
-    h1,
-    button {
-      font-family: "Montserrat", sans-serif
-    }
+            .fa-anchor,
+            .fa-coffee {
+                font-size: 200px;
+            }
+        </style>
+    </head>
 
-    .fa-anchor,
-    .fa-coffee {
-      font-size: 200px
-    }
-  </style>
-</head>
+    <body>
+        <!-- Navbar -->
+        <div class="w3-top">
+            <div
+                class="w3-bar w3-card w3-left-align w3-large"
+                style="background-color: #c20000; color: white"
+            >
+                <a
+                    class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red"
+                    href="javascript:void(0);"
+                    onclick="myFunction()"
+                    title="Toggle Navigation Menu"
+                    ><i class="fa fa-bars"></i
+                ></a>
+                <a
+                    href="index.html#"
+                    class="w3-bar-item w3-button w3-padding-large w3-white"
+                    >Home</a
+                >
+                <a
+                    href="index.html#about"
+                    class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white"
+                    >About</a
+                >
+                <a
+                    href="index.html#calls"
+                    class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white"
+                    >Call for Posters/Talks</a
+                >
+                <a
+                    href="index.html#org"
+                    class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white"
+                    >Organisers</a
+                >
+                <a
+                    href="abstracts.html"
+                    class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white"
+                    >Speaker Abstracts</a
+                >
+                <a
+                    href="posters.html"
+                    class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white"
+                    >Posters</a
+                >
+                <a
+                    href="index.html#schedule"
+                    class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white"
+                    >Schedule</a
+                >
+                <a
+                    href="index.html#map"
+                    class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white"
+                    >Map</a
+                >
+            </div>
 
-<body>
+            <!-- Navbar on small screens -->
+            <div
+                id="navDemo"
+                class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large"
+            >
+                <a
+                    href="index.html#about"
+                    class="w3-bar-item w3-button w3-padding-large"
+                    >About</a
+                >
+                <a
+                    href="index.html#calls"
+                    class="w3-bar-item w3-button w3-padding-large"
+                    >Call for Posters/Talks</a
+                >
+                <a
+                    href="index.html#org"
+                    class="w3-bar-item w3-button w3-padding-large"
+                    >Organisers</a
+                >
+                <a
+                    href="abstracts.html"
+                    class="w3-bar-item w3-button w3-padding-large"
+                    >Speaker Abstracts</a
+                >
+                <a
+                    href="posters.html"
+                    class="w3-bar-item w3-button w3-padding-large"
+                    >Posters</a
+                >
+                <a
+                    href="index.html#schedule"
+                    class="w3-bar-item w3-button w3-padding-large"
+                    >Schedule</a
+                >
+                <a
+                    href="index.html#map"
+                    class="w3-bar-item w3-button w3-padding-large"
+                    >Map</a
+                >
+            </div>
+        </div>
 
-  <!-- Navbar -->
-  <div class="w3-top">
-    <div class="w3-bar w3-card w3-left-align w3-large" style="background-color:#c20000;color:white;">
-      <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red"
-        href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-      <a href="index.html#" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
-      <a href="index.html#about" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">About</a>
-      <a href="index.html#calls" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Call for
-        Posters/Talks</a>
-      <a href="index.html#org"
-        class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Organisers</a>
-      <a href="abstracts.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Speaker
-        Abstracts</a>
-      <a href="posters.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Posters</a>
-      <a href="index.html#schedule"
-        class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Schedule</a>
-      <a href="index.html#map" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Map</a>
+        <!-- Header -->
+        <header
+            class="w3-container w3-center"
+            style="
+                background-image:
+                    linear-gradient(
+                        rgba(163, 162, 162, 0.733),
+                        rgba(163, 162, 162, 0.733)
+                    ),
+                    url(&quot;assets/photos/DSC_1097.JPG&quot;);
+                background-repeat: no-repeat;
+                background-size: cover;
+                color: white;
+                padding: 128px 16px;
+            "
+        >
+            <img width="10%" ; src="assets/mpieWhite.png" />
+            <h2 class="w3-margin w3-jumbo">MPIE 2025 Conference</h2>
+            <p class="w3-xlarge">
+                M<a style="color: #c20000">aths</a> P<a style="color: #c20000"
+                    >hysics</a
+                >
+                I<a style="color: #c20000">nformatics</a> E<a
+                    style="color: #c20000"
+                    >ngineering</a
+                >
+            </p>
+        </header>
 
+        <a id="about"></a>
+        <!-- Speaker Abstracts -->
+        <div class="w3-row-padding w3-padding-64 w3-container">
+            <div class="w3-content">
+                <div class="w3-center">
+                    <h1>Speaker Abstracts</h1>
+                    <p class="w3-xlarge w3-text-grey">
+                        MPIE 2025 Conference Panels
+                    </p>
+                </div>
+            </div>
+        </div>
 
-    </div>
+        <!-- Healthcare Panel -->
+        <div class="w3-row-padding w3-padding-64 w3-container">
+            <div class="w3-content">
+                <div class="w3-center">
+                    <h2>Healthcare Panel</h2>
+                </div>
+            </div>
+        </div>
 
-    <!-- Navbar on small screens -->
-    <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
-      <a href="index.html#about" class="w3-bar-item w3-button w3-padding-large">About</a>
-      <a href="index.html#calls" class="w3-bar-item w3-button w3-padding-large">Call for Posters/Talks</a>
-      <a href="index.html#org" class="w3-bar-item w3-button w3-padding-large">Organisers</a>
-      <a href="abstracts.html" class="w3-bar-item w3-button w3-padding-large">Speaker Abstracts</a>
-      <a href="posters.html" class="w3-bar-item w3-button w3-padding-large">Posters</a>
-      <a href="index.html#schedule" class="w3-bar-item w3-button w3-padding-large">Schedule</a>
-      <a href="index.html#map" class="w3-bar-item w3-button w3-padding-large">Map</a>
-    </div>
-  </div>
+        <!-- Karrie Liu -->
+        <div class="w3-row-padding w3-padding-64 w3-container">
+            <div class="w3-content">
+                <div class="w3-row">
+                    <div class="w3-twothird">
+                        <h1>Karrie Liu</h1>
+                        <p><strong>Department:</strong> Mathematics</p>
+                        <h5 class="w3-padding-32">
+                            Karrie Liu is a data scientist and healthcare
+                            analytics consultant currently undertaking a PhD in
+                            Women's Health at the University of Sussex. Her
+                            doctoral research focuses on using mathematical
+                            modelling and operational research to improve health
+                            equity through Women's Health Hubs in the UK. With
+                            over 15 years of experience in healthcare, life
+                            sciences, and data strategy, Karrie brings both
+                            technical expertise and real-world insight to the
+                            discussion. She is also a trustee at Age UK
+                            Wandsworth, where she advocates for older women's
+                            health, and she continues to lead pro bono data
+                            projects that support community-based services. Her
+                            work bridges the gap between data science, public
+                            health, and social impact — with a focus on creating
+                            inclusive, actionable solutions.
+                        </h5>
+                    </div>
+                    <div class="w3-third w3-center">
+                        <!-- Placeholder for speaker image -->
+                    </div>
+                </div>
+            </div>
+        </div>
 
-  <!-- Header -->
-  <header class="w3-container w3-center" style="background-image: linear-gradient(rgba(163, 162, 162, 0.733), rgba(163, 162, 162, 0.733)),url('assets/photos/DSC_1097.JPG');
-background-repeat: no-repeat;background-size: cover;color:white;padding:128px 16px">
-    <img width="10%" ; src="assets/mpieWhite.png">
-    <h2 class="w3-margin w3-jumbo">MPIE 2025 Conference</h2>
-    <p class="w3-xlarge">M<a style="color:#c20000;">aths</a> P<a style="color:#c20000;">hysics</a> I<a
-        style="color:#c20000;">nformatics</a> E<a style="color:#c20000;">ngineering</a></p>
+        <!-- Dr Elizabeth Rendon-Morales -->
+        <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+            <div class="w3-content">
+                <div class="w3-row">
+                    <div class="w3-twothird">
+                        <h1>Dr Elizabeth Rendon-Morales</h1>
+                        <p><strong>Department:</strong> Engineering</p>
+                        <h5 class="w3-padding-32">
+                            Dr. Elizabeth Rendon-Morales is an Associate
+                            Professor in Engineering in the Department of
+                            Engineering and Design at the University of Sussex.
+                            She sits on the EPSRC e-Futures electronics network
+                            steering group, the Sussex Research Development
+                            Concordant steering group and the EDI committee at
+                            the University of Sussex.
+                            <br /><br />
+                            Dr. Rendon-Morales is an engineer and a researcher
+                            in the areas of design and development of sensors
+                            and robotics systems including the integration and
+                            experimental evaluation of medical technology and
+                            instrumentation. She has more than twenty years of
+                            experience from both academia and Tech industry. Her
+                            current research is focused on the design and
+                            development of novel flexible sensors and actuators
+                            systems to contribute to the next generation of
+                            on-demand drug delivery systems, as well as the
+                            design of CMOS sensors, machine vision systems and
+                            its integration in robotics for high precision
+                            applications in cardiac surgery including
+                            Transcatheter Aorta Valve Implantation (TAVI) and
+                            neurosurgery.
+                        </h5>
+                    </div>
+                    <div class="w3-third w3-center">
+                        <!-- Placeholder for speaker image -->
+                    </div>
+                </div>
+            </div>
+        </div>
 
-  </header>
+        <!-- Dr Peter Wijeratne -->
+        <div class="w3-row-padding w3-padding-64 w3-container">
+            <div class="w3-content">
+                <div class="w3-row">
+                    <div class="w3-twothird">
+                        <h1>Dr Peter Wijeratne</h1>
+                        <p><strong>Department:</strong> Informatics</p>
+                        <p>
+                            <strong>Title:</strong> Probabilistic modelling of
+                            disease progression
+                        </p>
+                        <h5 class="w3-padding-32">
+                            <strong>Abstract:</strong> Disease progression
+                            models are special types of latent variable models
+                            that can infer trajectories of change in patients
+                            with a chronic degenerative condition, such as
+                            Alzheimer's disease. They provide unique insight
+                            into disease biology and staging systems with
+                            individual-level clinical utility. Here I will talk
+                            about some methods, applications, benefits and
+                            limitations of these approaches, and avenues for
+                            future research and collaboration. <br /><br />
+                            <strong>Bio:</strong> Dr. Wijeratne has a background
+                            in physics, engineering, and computer science, which
+                            he uses to make machine learning models, primarily
+                            for healthcare. His current research interests
+                            include developing new probabilistic models of
+                            neurodevelopment and neurodegeneration. Along with
+                            Dr. Ivor Simpson, he leads the Learners of
+                            Interpretable Latent Information (LILI) lab in the
+                            Department of Informatics.
+                        </h5>
+                    </div>
+                    <div class="w3-third w3-center">
+                        <!-- Placeholder for speaker image -->
+                    </div>
+                </div>
+            </div>
+        </div>
 
-  <a id="about"></a>
-  <!-- Speaker Announcements -->
-  <div class="w3-row-padding w3-padding-64 w3-container">
-    <div class="w3-content">
-      <div class="w3-center">
-        <h1>Speaker Abstracts</h1>
-        <p class="w3-xlarge w3-text-grey">Speakers will be announced soon</p>
-        <p class="w3-text-grey">Please check back later for detailed speaker information and abstracts</p>
-      </div>
-    </div>
-  </div>
+        <!-- Dr Sam Hile -->
+        <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+            <div class="w3-content">
+                <div class="w3-row">
+                    <div class="w3-twothird">
+                        <h1>Dr Sam Hile</h1>
+                        <p><strong>Department:</strong> Physics</p>
+                        <h5 class="w3-padding-32">Bio coming soon.</h5>
+                    </div>
+                    <div class="w3-third w3-center">
+                        <!-- Placeholder for speaker image -->
+                    </div>
+                </div>
+            </div>
+        </div>
 
+        <!-- Interdisciplinary Research Panel -->
+        <div class="w3-row-padding w3-padding-64 w3-container">
+            <div class="w3-content">
+                <div class="w3-center">
+                    <h2>Interdisciplinary Research Panel</h2>
+                    <p class="w3-text-grey">Speakers to be announced soon</p>
+                </div>
+            </div>
+        </div>
 
-  <!-- First Grid -->
-  <!-- <div class="w3-row-padding w3-padding-64 w3-container">
+        <!-- First Grid -->
+        <!-- <div class="w3-row-padding w3-padding-64 w3-container">
         <div class="w3-content">
           <div class="w3-row">
             <div class="w3-twothird">
@@ -115,8 +354,8 @@ background-repeat: no-repeat;background-size: cover;color:white;padding:128px 16
         </div>
       </div> -->
 
-  <!-- Second Grid -->
-  <!-- <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+        <!-- Second Grid -->
+        <!-- <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
         <div class="w3-content">
           <div class="w3-row">
             <div class="w3-twothird">
@@ -143,9 +382,8 @@ background-repeat: no-repeat;background-size: cover;color:white;padding:128px 16
         </div>
       </div> -->
 
-
-  <!-- First Grid -->
-  <!-- <div class="w3-row-padding w3-padding-64 w3-container">
+        <!-- First Grid -->
+        <!-- <div class="w3-row-padding w3-padding-64 w3-container">
         <div class="w3-content">
           <div class="w3-row">
             <div class="w3-twothird">
@@ -173,9 +411,7 @@ background-repeat: no-repeat;background-size: cover;color:white;padding:128px 16
         </div>
       </div> -->
 
-
-
-  <!-- <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+        <!-- <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
         <div class="w3-content">
           <div class="w3-row">
             <div class="w3-twothird">
@@ -203,77 +439,82 @@ background-repeat: no-repeat;background-size: cover;color:white;padding:128px 16
         </div>
       </div> -->
 
-
-  <!--
+        <!--
         <div class="w3-row-padding w3-padding-64 w3-container">
             <div class="w3-content">
               <div class="w3-twothird">
                   <h1>About</h1>
                   <h5 class="w3-padding-32">
-            
+
                     </h5>
                 <div class="w3-third w3-center">
-                  <img class="w3-padding-64" style="margin-top:50px;margin-left:20px;width:100%;height:100%;"; 
+                  <img class="w3-padding-64" style="margin-top:50px;margin-left:20px;width:100%;height:100%;";
                   src="assets/robot.jpg">
                 </div>
       </div>
     </div>
   </div>
 </div>
-    
+
           <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
             <div class="w3-content">
                 <div class="w3-twothird">
                   <h1>About</h1>
                   <h5 class="w3-padding-32">
-            
+
                     </h5>
                 <div class="w3-third w3-center">
-                  <img class="w3-padding-64" style="margin-top:50px;margin-left:20px;width:100%;height:100%;"; 
+                  <img class="w3-padding-64" style="margin-top:50px;margin-left:20px;width:100%;height:100%;";
                   src="assets/robot.jpg">
                 </div>
               </div>
             </div>
-        
+
             <div class="w3-row-padding w3-padding-64 w3-container">
                 <div class="w3-content">
                   <div class="w3-twothird">
                       <h1>About</h1>
                       <h5 class="w3-padding-32">
-                
+
                         </h5>
                     <div class="w3-third w3-center">
-                      <img class="w3-padding-64" style="margin-top:50px;margin-left:20px;width:100%;height:100%;"; 
+                      <img class="w3-padding-64" style="margin-top:50px;margin-left:20px;width:100%;height:100%;";
                       src="assets/robot.jpg">
                     </div>
               </div><div></div>
-        
+
  -->
-  <div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
-  </div>
-  <!-- Footer -->
-  <footer class="w3-container w3-padding-64 w3-center w3-opacity">
-    <p class="w3-margin ">
-      University of Sussex <br>
-      Sussex House, Falmer <br>
-      Brighton, BN1 9RH <br>
-      United Kingdom <br>
-    </p>
-    <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-  </footer>
+        <div
+            class="w3-container w3-black w3-center w3-opacity w3-padding-64"
+        ></div>
+        <!-- Footer -->
+        <footer class="w3-container w3-padding-64 w3-center w3-opacity">
+            <p class="w3-margin">
+                University of Sussex <br />
+                Sussex House, Falmer <br />
+                Brighton, BN1 9RH <br />
+                United Kingdom <br />
+            </p>
+            <p>
+                Powered by
+                <a
+                    href="https://www.w3schools.com/w3css/default.asp"
+                    target="_blank"
+                    >w3.css</a
+                >
+            </p>
+        </footer>
 
-  <script>
-    // Used to toggle the menu on small screens when clicking on the menu button
-    function myFunction() {
-      var x = document.getElementById("navDemo");
-      if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-      } else {
-        x.className = x.className.replace(" w3-show", "");
-      }
-    }
-  </script>
-
-</body>
-
+        <script>
+            // Used to toggle the menu on small screens when clicking on the menu button
+            function myFunction() {
+                var x = document.getElementById("navDemo");
+                if (x.className.indexOf("w3-show") == -1) {
+                    x.className += " w3-show";
+                } else {
+                    x.className = x.className.replace(" w3-show", "");
+                }
+            }
+        </script>
+    </body>
 </html>
